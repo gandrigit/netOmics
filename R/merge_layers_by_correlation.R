@@ -61,7 +61,7 @@ get_interaction_from_correlation <- function(X,
                                             var.name = "'threshold' ")
     
     # corr between X and Y
-    res.corr <- cor(x = X, y = Y, method = "spearman")
+    res.corr <- cor(x = X, y = Y, method = "spearman", use = "complete.obs")
     corr.graph <- abs(res.corr) >=
         threshold
     

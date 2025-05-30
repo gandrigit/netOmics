@@ -20,7 +20,7 @@ create.multiplex <- function(LayersList,...){
   SeqLayers <- seq(Number_of_Layers)
   Layers_Name <- names(LayersList)
   
-  # if (!all(sapply(SeqLayers, function(x) is.igraph(LayersList[[x]])))){
+  # if (!all(sapply(SeqLayers, function(x) is_igraph(LayersList[[x]])))){
   #   stop("Not igraph objects")
   # }
   

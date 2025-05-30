@@ -238,3 +238,5 @@ merge_graphs <- function(graph1,
     class(merged_graphs) <- c("merged.igraph", "igraph")
     return(merged_graphs)
 }
+
+
